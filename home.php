@@ -13,6 +13,6 @@
 ?>
 
 <div class="py-5">
-<h2 align ="center">WELCOME TO THE STUDENT DATA WEBSITE</h2>
+<h2 align ="center">WELCOME TO THE PERPUSTAKAAN KU!</h2>
 </div>
 <div class="row">
