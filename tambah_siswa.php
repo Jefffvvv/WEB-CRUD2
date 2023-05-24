@@ -3,7 +3,7 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-    <title>Add student</title>
+    <title>Tambah Buku</title>
 </head>
 <body>
 <div class="container">
@@ -12,10 +12,10 @@
         Name :
         <input type="text" name="nama" value="" class="form-control">
 
-        Absence :
+        Halaman :
         <textarea name="absen" cols = 147 class = "form-control"></textarea>
 
-        Class :
+        Kategori :
         <input type="text" name="kelas" value="" class="form-control">
 
         Picture :
