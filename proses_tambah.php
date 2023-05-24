@@ -1,8 +1,8 @@
 <?php
 if($_POST) {
     $nama=$_POST['nama'];
-    $absen=$_POST['absen'];
-    $kelas=$_POST['kelas'];
+    $halaman=$_POST['halaman'];
+    $kategori=$_POST['kategori'];
     $foto = basename($_FILES["foto"]["name"]);
     $target_dir = "images/";
     $target_file = $target_dir . basename($_FILES["foto"]["name"]);
@@ -55,15 +55,15 @@ if($_POST) {
                 
                 include "koneksi.php";
                 
-                $sql = "INSERT INTO `siswa` (`nama`, `absen`, `kelas`, `foto`) VALUES ('$nama', '$absen', '$kelas', '$foto')";
+                $sql = "INSERT INTO `buku` (`nama`, `halaman`, `kategori`, `foto`) VALUES ('$nama', '$halaman', '$kategori', '$foto')";
                 
                 $insert=mysqli_query($konn, $sql);
 
                 if($insert) {
           
-                     echo "<script>alert('Sukses menambahkan siswa');location.href='siswa.php';</script>";
+                     echo "<script>alert('Sukses menambahkan buku');location.href='siswa.php';</script>";
                  } else {
-                    echo "<script>alert('Gagal menambahkan siswa');location.href='siswa.php';</script>";
+                    echo "<script>alert('Gagal menambahkan buku');location.href='siswa.php';</script>";
                 }
             } else {
                 echo "<script>alert('Error saat upload file foto');location.href='siswa.php';</script>";
