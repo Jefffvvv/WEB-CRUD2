@@ -19,8 +19,8 @@
     <tr>
         <th>No</th>
         <th>Name</th>
-        <th>Absence</th>
-        <th>Class</th> 
+        <th>Halaman</th>
+        <th>Kategori</th> 
         <th>Picture</th>
         <th>Action</th>
         <th></th>
