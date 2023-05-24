@@ -1,8 +1,8 @@
 <?php
     $id = $_POST["id"];
     $nama = $_POST["nama"];
-    $absen = $_POST["absen"];
-    $kelas = $_POST["kelas"];
+    $halaman = $_POST["halaman"];
+    $kategori = $_POST["kategori"];
 
     include "koneksi.php";
     if (    $foto = basename($_FILES["foto"]["name"])) {
@@ -21,28 +21,28 @@
 
             move_uploaded_file($_FILES["foto"]["tmp_name"], $target_file);
             $input = mysqli_query($konn, "UPDATE siswa SET 
-            nama='".$nama."', absen='".$absen."',
-            kelas='".$kelas."', foto='".$foto."'
+            nama='".$nama."', halaman='".$halaman."',
+            kategori='".$kategori."', foto='".$foto."'
             where id='".$id."'");
  mysqli_error($konn);
              if ($input) {
 
-                 echo "<script>alert('Sukses mengubah siswa');location.href='siswa.php';</script>";
+                 echo "<script>alert('Sukses mengubah buku');location.href='siswa.php';</script>";
              }
              else {
-                 echo "<script>alert('Gagal mengubah siswa');location.href='siswa.php';</script>";
+                 echo "<script>alert('Gagal mengubah buku');location.href='siswa.php';</script>";
              }
         }
     }
     else{
         $input = mysqli_query($konn, "UPDATE siswa SET 
-        nama='".$nama."', absen='".$absen."', kelas='".$kelas."' where id='".$id."'");
+        nama='".$nama."', halaman='".$halaman."', kategori='".$kategori."' where id='".$id."'");
 
          if ($input) {
-             echo "<script>alert('Sukses mengubah siswa');location.href='siswa.php';</script>";
+             echo "<script>alert('Sukses mengubah buku');location.href='siswa.php';</script>";
          }
          else {
-             echo "<script>alert('Gagal mengubah siswa');location.href='siswa.php';</script>";
+             echo "<script>alert('Gagal mengubah buku');location.href='siswa.php';</script>";
          }
     }
 
