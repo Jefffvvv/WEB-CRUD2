@@ -17,7 +17,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
             </a>
-            <a class="nav-link" href="siswa.php">Student data
+            <a class="nav-link" href="siswa.php">Data Buku
             </a>
             </ul>
             <form action="" method="post">
